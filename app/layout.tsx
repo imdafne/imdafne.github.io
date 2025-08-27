@@ -24,10 +24,10 @@ const fangzhengFont = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "此间 Herein - 现代极简移动应用",
-  description: "此间 Herein，一款现代极简的移动应用，为您带来全新的数字体验。",
+  title: "此间 Herein - 个性化桌面小组件",
+  description: "此间 Herein，用精美小组件装点你的数字生活，让每个屏幕都成为独特的风景。",
   generator: "v0.app",
-  keywords: ["此间", "Herein", "移动应用", "iOS", "App"],
+  keywords: ["此间", "Herein", "小组件", "桌面美化", "iOS", "App"],
   authors: [{ name: "Herein Team" }],
   viewport: "width=device-width, initial-scale=1",
 }

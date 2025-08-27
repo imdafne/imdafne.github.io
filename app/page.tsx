@@ -23,11 +23,21 @@ export default function HereinLandingPage() {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <div className="space-y-4">
-              <h1 className="text-6xl md:text-8xl font-normal text-white tracking-tight drop-shadow-lg font-fangzheng">
-                此间 Herein
-              </h1>
+              <div className="relative w-full flex justify-center lg:justify-start">
+                <div className="relative w-48 md:w-72 lg:w-96">
+                  <Image 
+                    src="/images/herein-logo.png" 
+                    alt="此间 Herein" 
+                    width={500}
+                    height={200}
+                    className="w-full h-auto drop-shadow-lg"
+                    style={{ objectFit: 'contain' }}
+                    priority
+                  />
+                </div>
+              </div>
               <h2 className="text-2xl md:text-3xl text-white/90 font-normal font-fangzheng">布置一个属于你的角落</h2>
-              <p className="text-lg md:text-xl text-white/70 font-normal font-fangzheng max-w-md mx-auto lg:mx-0">
+              <p className="text-lg md:text-xl text-white/90 font-normal font-fangzheng max-w-md mx-auto lg:mx-0">
                 个性化小组件，装点你的数字生活
               </p>
             </div>
@@ -44,7 +54,7 @@ export default function HereinLandingPage() {
             <div className="relative">
               <div className="w-72 h-[580px] bg-black rounded-[3rem] p-2 shadow-2xl">
                 <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative">
-                  <Image src="/images/phone-screen.png" alt="此间应用界面" fill className="object-cover" priority />
+                  <Image src="/images/herein-app-screen.png" alt="此间应用界面" fill className="object-cover" priority />
                 </div>
               </div>
             </div>
@@ -53,9 +63,12 @@ export default function HereinLandingPage() {
             <Button
               size="lg"
               className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg font-normal rounded-xl font-fangzheng shadow-lg"
+              asChild
             >
-              <Download className="mr-2 h-5 w-5" />
-              App Store 下载
+              <a href="https://apps.apple.com/app/id6751411153" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-5 w-5" />
+                App Store 下载
+              </a>
             </Button>
           </motion.div>
         </div>
@@ -68,28 +81,25 @@ export default function HereinLandingPage() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1.8, duration: 0.8 }}
         >
-          <div className="text-xs text-gray-500 space-y-2 font-fangzheng">
+          <div className="text-xs text-gray-500 font-fangzheng">
             <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4">
               <span>© 2025 Herein</span>
               <span className="hidden md:inline">|</span>
-              <a href="#" className="hover:text-gray-400 transition-colors">
+              <a href="/privacy-policy.html" className="hover:text-gray-400 transition-colors">
                 隐私政策
               </a>
               <span className="hidden md:inline">|</span>
-              <a href="#" className="hover:text-gray-400 transition-colors">
+              <a href="/terms-of-service.html" className="hover:text-gray-400 transition-colors">
                 用户协议
               </a>
               <span className="hidden md:inline">|</span>
-              <a href="#" className="hover:text-gray-400 transition-colors">
+              <a href="mailto:support@openwidget.net" className="hover:text-gray-400 transition-colors">
                 联系我们
               </a>
-            </div>
-            <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4">
+              <span className="hidden md:inline">|</span>
               <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">
                 沪ICP备2025136576号-7A
               </a>
-              <span className="hidden md:inline">|</span>
-              <span>support@herein.app</span>
             </div>
           </div>
         </motion.div>

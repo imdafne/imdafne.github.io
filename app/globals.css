@@ -89,7 +89,7 @@
 
 /* Added custom gradient background class */
 .gradient-bg {
-  background: linear-gradient(180deg, #69b9ff 0%, #afe5ff 50%, #ffefbe 100%);
+  background: linear-gradient(180deg, #69b9ff 0%, #afe5ff 70%, #ffefbe 100%);
 }
 
 .glass-effect {
