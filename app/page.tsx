@@ -1,6 +1,5 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -61,16 +60,15 @@ export default function HereinLandingPage() {
             </div>
 
             {/* Download button */}
-            <Button
-              size="lg"
-              className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg font-normal rounded-xl font-fangzheng shadow-lg"
-              asChild
+            <a 
+              href="https://apps.apple.com/app/id6751411153" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg font-normal rounded-xl font-fangzheng shadow-lg transition-colors"
             >
-              <a href="https://apps.apple.com/app/id6751411153" target="_blank" rel="noopener noreferrer">
-                <Download className="mr-2 h-5 w-5" />
-                App Store 下载
-              </a>
-            </Button>
+              <Download className="mr-2 h-5 w-5" />
+              App Store 下载
+            </a>
           </motion.div>
         </div>
       </main>
