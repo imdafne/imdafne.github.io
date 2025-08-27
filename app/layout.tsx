@@ -29,7 +29,12 @@ export const metadata: Metadata = {
   generator: "v0.app",
   keywords: ["此间", "Herein", "小组件", "桌面美化", "iOS", "App"],
   authors: [{ name: "Herein Team" }],
-  viewport: "width=device-width, initial-scale=1",
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 }
 
 export default function RootLayout({

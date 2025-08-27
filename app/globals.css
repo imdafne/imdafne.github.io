@@ -104,6 +104,19 @@
   font-weight: normal;
 }
 
+/* Dynamic viewport height utilities for mobile compatibility */
+.full-height {
+  min-height: 100vh; /* Fallback for browsers that don't support newer units */
+  min-height: 100dvh; /* Dynamic viewport height - adjusts with browser UI */
+  min-height: -webkit-fill-available; /* iOS Safari specific */
+}
+
+.height-dvh {
+  height: 100vh; /* Fallback */
+  height: 100dvh; /* Dynamic viewport */
+  height: -webkit-fill-available; /* iOS Safari */
+}
+
 @theme inline {
   /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
   --color-background: var(--background);

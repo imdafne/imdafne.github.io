@@ -38,20 +38,7 @@ yarn-error.log*
 next-env.d.ts
 
 # 未使用的组件和资源（本地保留）
-/components/ui/*
-!/components/ui/button.tsx
-/components/theme-provider.tsx
-/hooks/
-/styles/globals.css
-/Herein.icon/
-/public/images/app-mockup.jpeg
-/public/images/color-palette.png
-/public/images/gradient-bg.jpeg
-/public/images/gradient-bg.png
-/public/images/phone-screen.png
-/public/placeholder*.jpg
-/public/placeholder*.svg
-/public/placeholder-logo.png
-/public/placeholder-logo.svg
-/icon.json
-/components.json
+# 统一移动至 /local/，并整体忽略
+/local/
+
+# 如需逐项恢复跟踪，可临时注释上述 /local/ 忽略规则
