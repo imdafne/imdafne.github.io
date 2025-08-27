@@ -37,8 +37,15 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# 未使用的组件和资源（本地保留）
-# 统一移动至 /local/，并整体忽略
+# ===== 本地开发文件 =====
+# 所有本地保留但不需要部署的文件都在 /local/ 目录中
 /local/
 
-# 如需逐项恢复跟踪，可临时注释上述 /local/ 忽略规则
+# 包含内容:
+# - /local/components/  - 未使用的UI组件
+# - /local/config/      - 组件配置文件
+# - /local/docs/        - 本地文档（Word文件等）
+# - /local/hooks/       - 未使用的React hooks
+# - /local/icon/        - 图标资源
+# - /local/public/      - 未使用的公共资源
+# - /local/styles/      - 未使用的样式文件
