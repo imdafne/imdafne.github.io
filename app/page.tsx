@@ -54,7 +54,15 @@ export default function HereinLandingPage() {
             <div className="relative">
               <div className="w-64 h-[500px] md:w-72 md:h-[580px] bg-black rounded-[3rem] p-2 shadow-2xl">
                 <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative">
-                  <Image src="/images/herein-app-screen.png" alt="此间应用界面" fill className="object-cover" priority />
+                  <Image 
+                    src="/images/herein-app-screen.jpg" 
+                    alt="此间应用界面" 
+                    fill 
+                    className="object-cover" 
+                    priority
+                    sizes="(max-width: 768px) 256px, 288px"
+                    quality={90}
+                  />
                 </div>
               </div>
             </div>
