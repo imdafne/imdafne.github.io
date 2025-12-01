@@ -38,7 +38,6 @@
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgba(105, 185, 255, 0.2);
   --sidebar-ring: rgba(105, 185, 255, 0.3);
-  --font-fangzheng: "FangZheng"; /* Custom font family */
 }
 
 .dark {
@@ -75,7 +74,6 @@
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgba(105, 185, 255, 0.3);
   --sidebar-ring: rgba(105, 185, 255, 0.4);
-  --font-fangzheng: "FangZheng"; /* Custom font family */
 }
 
 @layer base {
@@ -100,8 +98,8 @@
 
 /* Updated custom font utility class to use normal font weight */
 .font-fangzheng {
-  font-family: var(--font-fangzheng), var(--font-sans), sans-serif;
-  font-weight: normal;
+  font-family: var(--font-sans), sans-serif;
+  font-weight: 500;
 }
 
 /* Dynamic viewport height utilities for mobile compatibility */

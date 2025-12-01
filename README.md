@@ -26,6 +26,13 @@ npm run build
 
 本站点通过 GitHub Actions 自动部署到 GitHub Pages。推送到 `main` 分支会触发自动部署。
 
+## 法律文档更新
+
+- 静态文件位置：`public/privacy-policy.html`、`public/terms-of-service.html`、`public/youth-protection.html`（未成年人规则）。
+- 更新方式：直接替换对应 HTML 文件内容，保持文件名不变，这样页脚和隐私政策中的未成年人链接不会丢失。
+- 检查项：确认隐私政策第八部分的《此间儿童/青少年个人信息保护规则》链接依旧指向 `/youth-protection.html`。
+- 预览：`npm run build && npx serve out` 或 `npm run dev` 本地查看。
+
 ## 项目结构
 
 ```

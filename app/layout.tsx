@@ -1,27 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Noto_Sans_SC } from "next/font/google"
-import localFont from "next/font/local"
 import "./globals.css"
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-})
-
-const notoSansSC = Noto_Sans_SC({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-noto-sans-sc",
-  weight: ["300", "400", "500", "700"],
-})
-
-const fangzhengFont = localFont({
-  src: "../public/fonts/fangzheng-lantinghei.ttf",
-  display: "swap",
-  variable: "--font-fangzheng",
-})
+const fontStack =
+  '"SF Pro Display", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Noto Sans SC", "Inter", sans-serif'
 
 export const metadata: Metadata = {
   title: "此间 Herein - 个性化桌面小组件",
@@ -43,14 +25,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="zh-CN" className={`${inter.variable} ${notoSansSC.variable} ${fangzhengFont.variable}`}>
+    <html lang="zh-CN">
       <head>
         <style>{`
 html {
-  font-family: ${notoSansSC.style.fontFamily}, ${inter.style.fontFamily};
-  --font-sans: ${notoSansSC.variable};
-  --font-inter: ${inter.variable};
-  --font-fangzheng: ${fangzhengFont.variable};
+  font-family: ${fontStack};
+  --font-sans: ${fontStack};
+  --font-inter: ${fontStack};
 }
         `}</style>
       </head>

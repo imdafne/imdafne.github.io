@@ -24,20 +24,12 @@ export default function HereinLandingPage() {
           >
             <div className="space-y-4">
               <div className="relative w-full flex justify-center lg:justify-start">
-                <div className="relative w-48 md:w-72 lg:w-96">
-                  <Image 
-                    src="/images/herein-logo.png" 
-                    alt="此间 Herein" 
-                    width={500}
-                    height={200}
-                    className="w-full h-auto drop-shadow-lg"
-                    style={{ objectFit: 'contain' }}
-                    priority
-                  />
+                <div className="relative w-48 md:w-72 lg:w-96 aspect-[5/2]">
+                  <Image src="/images/logo.svg" alt="此间 Herein" fill className="object-contain drop-shadow-lg" priority />
                 </div>
               </div>
-              <h2 className="text-2xl md:text-3xl text-white/90 font-normal font-fangzheng">布置一个属于你的角落</h2>
-              <p className="text-lg md:text-xl text-white/90 font-normal font-fangzheng max-w-md mx-auto lg:mx-0">
+              <h2 className="text-2xl md:text-3xl text-white/90 font-medium">布置一个属于你的角落</h2>
+              <p className="text-lg md:text-xl text-white/90 font-medium max-w-md mx-auto lg:mx-0">
                 个性化小组件，装点你的数字生活
               </p>
             </div>
@@ -54,11 +46,11 @@ export default function HereinLandingPage() {
             <div className="relative">
               <div className="w-64 h-[500px] md:w-72 md:h-[580px] bg-black rounded-[3rem] p-2 shadow-2xl">
                 <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative">
-                  <Image 
-                    src="/images/herein-app-screen.jpg" 
-                    alt="此间应用界面" 
-                    fill 
-                    className="object-cover" 
+                  <Image
+                    src="/images/herein-app-screen.jpg"
+                    alt="此间应用界面"
+                    fill
+                    className="object-cover"
                     priority
                     sizes="(max-width: 768px) 256px, 288px"
                     quality={90}
